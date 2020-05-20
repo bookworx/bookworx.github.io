@@ -46,7 +46,15 @@
 	</head>
 	<body>
 		
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		
 	<script language="JavaScript">
+		
+		$(document).ready(function () {
+          $('body').bind('cut copy', function (e) {
+              e.preventDefault();
+          });
+      });
 
   window.onload = function() {
     document.addEventListener("contextmenu", function(e){
@@ -343,10 +351,8 @@
 					
 					<div class="row copy-right">
 						<div class="col-md-6 col-md-offset-3 text-center">
-							<p class="fh5co-social-icon">
-								 <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/689892/t/0"></script>
-							</p>
-							<p>Copyright 2020 <a href="#">Book Worx</a>. <br>All Rights Reserved.</p>
+							<p><h4>Visitor Count:<a class="hitCounter" href="#" data-name="b5748eb44d64c2302aff977eb95c7625|5|page|45|#ffffff|#b8b8b8|large|s-hit"></a><script>document.write("<script type='text/javascript' src='https://visitorshitcounter.com/js/hitCounter.js?v="+Date.now()+"'><\/script>");</script></h4><br><br>
+							Copyright 2020 <a href="#">Book Worx</a>. <br>All Rights Reserved.</p>
 						</div>
 					</div>
 				</div>
@@ -393,4 +399,3 @@
 
 	</body>
 </html>
-
